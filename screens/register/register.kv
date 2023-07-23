@@ -1,0 +1,46 @@
+<RegisterScreen>
+
+
+    MDBoxLayout:
+        orientation: 'vertical'
+        # md_bg_color: 'red'
+        size_hint_x: .7
+        size_hint_y: .3
+        pos_hint: {'center_x': .5, 'center_y':  .6}
+        spacing: 40
+        # padding: (20,20,20,20)
+
+        MDBoxLayout:
+            padding: (0, 0, 0, 80)
+
+            MDLabel:
+                text: 'formthotics'
+                halign: 'center'
+                font_name: 'OpenSans'
+                font_size: '32sp'
+                bold: True
+
+        MDBoxLayout:    
+            padding: (0, 0, 0, 70)
+            MDLabel:
+                text: 'Станьте членом команды системы Formthotics. Делитесь своим QR кодом со знакомыми, друзьями, коллегами и родственниками и получайте вознаграждение за каждого человека'
+                font_name: 'OpenSans'
+                font_size: '14sp'
+            
+        MDBoxLayout:
+            orientation: 'vertical'
+            spacing: 10
+            # padding: (0, 50, 0, 0)
+
+            MDRaisedButton:
+                text: 'Авторизоваться'
+                pos_hint: {'center_x': .5}
+                size_hint_x: 1
+
+            MDRaisedButton:
+                text: 'Зарегистрироваться'
+                pos_hint: {'center_x': .5}
+                size_hint_x: 1
+
+    # Widget:
+        # size_hint_y: .6
