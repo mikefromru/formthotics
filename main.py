@@ -23,6 +23,8 @@ from kivy.uix.screenmanager import (
     RiseInTransition
 )
 
+print()
+
 class App(MDApp):
 
     def build(self):
