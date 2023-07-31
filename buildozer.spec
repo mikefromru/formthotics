@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = My Application
+title = Formthotics
 
 # (str) Package name
-package.name = myapp
+package.name = formthotics
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.test
@@ -13,7 +13,7 @@ package.domain = org.test
 source.dir = .
 
 # (list) Source files to include (let empty to include all the files)
-source.include_exts = py,png,jpg,kv,atlas
+source.include_exts = py,png,jpg,kv,atlas,ttf
 
 # (list) List of inclusions using pattern matching
 #source.include_patterns = assets/*,images/*.png
@@ -22,7 +22,7 @@ source.include_exts = py,png,jpg,kv,atlas
 #source.exclude_exts = spec
 
 # (list) List of directory to exclude (let empty to not exclude anything)
-#source.exclude_dirs = tests, bin, venv
+source.exclude_dirs = tests, bin, venv, backups, env
 
 # (list) List of exclusions using pattern matching
 # Do not prefix with './'
@@ -36,9 +36,9 @@ version = 0.1
 # version.filename = %(source.dir)s/main.py
 
 # (list) Application requirements
-# comma separated e.g. requirements = sqlite3,kivy
-#requirements = python3,kivy
-requirements = python3,kivy==2.2.0,https://github.com/kivymd/KivyMD/archive/master.zip,pillow,requests,openssl,thread6,urllib3,idna,sdl2_ttf,sdl2,certifi,chardet,charset_normalizer
+# comma separated e.g. requirements = sqlite3,
+requirements = python3,kivy,https://github.com/kivymd/KivyMD/archive/master.zip
+#requirements = python3,kivy,kivymd,pillow,requests,openssl,thread6,urllib3,idna,sdl2_ttf,sdl2,certifi,chardet,charset_normalizer
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -46,9 +46,11 @@ requirements = python3,kivy==2.2.0,https://github.com/kivymd/KivyMD/archive/mast
 
 # (str) Presplash of the application
 #presplash.filename = %(source.dir)s/data/presplash.png
+presplash.filename = presplash.png
 
 # (str) Icon of the application
 #icon.filename = %(source.dir)s/data/icon.png
+icon.filename = icon.png
 
 # (list) Supported orientations
 # Valid options are: landscape, portrait, portrait-reverse or landscape-reverse
@@ -82,7 +84,7 @@ fullscreen = 0
 # red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray,
 # darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy,
 # olive, purple, silver, teal.
-#android.presplash_color = #FFFFFF
+android.presplash_color = #FFFFFF
 
 # (string) Presplash animation using Lottie format.
 # see https://lottiefiles.com/ for examples and https://airbnb.design/lottie/
@@ -102,7 +104,7 @@ fullscreen = 0
 #android.features = android.hardware.usb.host
 
 # (int) Target Android API, should be as high as possible.
-#android.api = 31
+android.api = 32
 
 # (int) Minimum API your APK / AAB will support.
 #android.minapi = 21

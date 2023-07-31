@@ -1,0 +1,114 @@
+<SuccessTestScreen>
+        
+    MDBoxLayout:
+        orientation: 'vertical'
+       
+        # md_bg_color: 'yellow'    
+        size_hint: None, None
+
+        # adaptive_height: True
+        size: "300dp", "550dp"
+        # pos_hint: {'center_x': .5}
+        pos_hint: {'center_x': .5, 'center_y': .6}
+        spacing: dp(10)
+        # padding: 20
+
+        # MDBoxLayout:
+        #     pos_hint: {'top': 1}
+        #     MDIconButton:
+        #         size_hint_y: None
+        #         icon: 'arrow-left'
+        #         # pos_hint: {'top': 1}
+        #         on_release: root.manager.current = 'register_screen'
+
+        
+        MDBoxLayout:
+            orientation: 'vertical'
+            size_hint: 1, None
+            spacing: dp(70)
+            padding: (dp(0), dp(0), dp(0), dp(40),)
+            # adaptive_height: True
+
+            MDLabel:
+                text: 'Поздравляем вы прошли тест'
+                font_name: 'OpenSans'
+                halign: 'center'
+                font_size: '16sp'
+                bold: True
+            
+
+            MDLabel:
+                text: 'Пожалуйста заполните данные поля, после чего мы с вами свяжемся. Администратор уже подготавливает для вас личный кабинет с необходимой информацией.'
+                font_name: 'OpenSans'
+                font_size: '14sp'
+                # size_hint_y: None
+
+        MDBoxLayout:
+            orientation: 'vertical'
+            adaptive_height: True
+            # md_bg_color: 'green'
+
+            MDTextField:
+                # size_hint_y: .5
+                # size_hint: 1, Non
+                # size_hint_y: None
+                # height: 10
+                hint_text: 'Имя'
+                font_name: 'OpenSans'
+                font_size: '14sp'
+                mode: 'rectangle'
+                multiline: False
+                radius: (dp(15), dp(15), dp(15), dp(15))
+
+            MDTextField:
+                size_hint: 1, None
+                hint_text: 'Фамилия'
+                font_name: 'OpenSans'
+                font_size: '14sp'
+                mode: 'rectangle'
+                radius: (dp(15), dp(15), dp(15), dp(15))
+                # icon_left: 'key-variant'
+
+            MDTextField:
+                # size_hint: 1, .5
+                # size_hint: 1, None
+                hint_text: 'Отчество'
+                font_name: 'OpenSans'
+                font_size: '14sp'
+                mode: 'rectangle'
+                radius: (dp(15), dp(15), dp(15), dp(15))
+                # halign: 'right'
+    
+            MDTextField:
+                # size_hint: 1, .5
+                # size_hint: 1, None
+                hint_text: 'E-mail'
+                font_name: 'OpenSans'
+                font_size: '14sp'
+                mode: 'rectangle'
+                radius: (dp(15), dp(15), dp(15), dp(15))
+
+            MDTextField:
+                # size_hint: 1, .5
+                # size_hint: 1, None
+                hint_text: 'Номер телефона'
+                font_name: 'OpenSans'
+                font_size: '14sp'
+                mode: 'rectangle'
+                radius: (dp(15), dp(15), dp(15), dp(15))
+
+
+        # MDRaisedButton:
+        MikeyButton:
+            text: 'Отправить'
+            pos_hint: {'center_x': .5}
+            size_hint_x: 1
+            size_hint_y: None
+            # on_release: root.register()
+            elevation: 0
+            font_name: 'fonts/OpenSans/OpenSans-SemiBold.ttf'
+            font_size: '16sp'
+            rounded_button: True
+            # radius: [20, 20, 20, 20]
+
+
