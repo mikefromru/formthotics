@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Formthotics</string>
-    <string name="private_version">d648de4c6a1709afabcd60cb63b2748e160a60ea</string>
-    <string name="presplash_color">#FFFFFF</string>
-    <string name="urlScheme">kivy</string>
-</resources>
